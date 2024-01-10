@@ -1,0 +1,27 @@
+EXPLAINING THE TERRAFORM PROJECT
+
+Terrafrom was used in this project to create an aws instance (ubuntu) in multiple regions (free-tier) (eu-west-1(dev) and eu-central-1(production)
+The project was build on minimum of 2 availablity zones and its reuseable.
+terraform plan -var-file has a file that ends with the extension tfvars (dev.tfvars and prod.tfvars). It was built on multiple environments (dev, prod) and it has a script that creates ansible, docker container 
+ The assignment scripts is modularized 
+
+Variables: this will allow us to centralize and manage values in our configurations
+
+RESOURSCES:       
+Resources in this project are the most important languages in Terraform. Resources would allow you provision different resources in your infrastructure.
+ resource "aws_instance" "base" { output values (id, name)
+            ami = var.ami
+            instance_type ="t2_micro"
+        resource "aws_instance
+
+MODULES:
+modules in this project are defined with the module blocks and they are ways of constructing reuseable boundles of resources,
+which will allow you to organize collections of terraform codes which you can share across multiple configurations.
+
+
+
+
+
+
+ 
+
